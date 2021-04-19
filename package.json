@@ -1,0 +1,20 @@
+{
+    "name": "catadopt",
+    "version": "1.0.0",
+    "description": "cats for adoption database",
+    "main": "index.js",
+    "directories": {},
+    "dependencies": {},
+    "engine": {
+        "node": "14.16.1 LTS"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dungtomcao/catadopt.git"
+    },
+    "author": "Tom Cao"
+}
