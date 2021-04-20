@@ -8,7 +8,10 @@
     "engine": {
         "node": "14.16.1 LTS"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    },
+    "type": "module",
     "scripts": {
         "start": "nodemon index.js"
     },
