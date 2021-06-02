@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>kitties for adoption</h1>
+        <p>Want to adopt a kitty? On this site you can find kitties from 
+            multiple shelters in Washington state. 
+            Help give a cat a warm home.
+        </p>
+            {{#each kitty}}
+                <div><a href="/kitty?name={{name}}">{{name}}</a></div>
+                {{/each}}
+    </body>
+</html>

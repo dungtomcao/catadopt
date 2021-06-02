@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <a href="/"><h1>kitties for adoption</h1></a>
+    {{#if found}}
+        <h2>{{name}}</h2>
+        <div>
+            <li>Age: {{found.age}}</li>
+            <li>Breed: {{found.breed}}</li>
+            <li>Vaccination: {{found.vaccination}}</li>
+            <li>Location: {{found.location}}</li>
+        </div>
+    {{else}}
+        <h2>Hmm... It seems that {{title}} is not here. If you would like this cat on the list, let me know!</h2>
+    {{/if}}
+
+    </body>
+</html>
