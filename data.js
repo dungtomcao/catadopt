@@ -41,3 +41,38 @@ export const getKitty = (name) => {
         return kitty.name === name;
     });
 };
+
+export const addKitty = (newKitty) => {
+    const oldLength = kitties.length;
+    let found = kitties.find(kitty => {
+        return kitty.name === newKitty.name;
+    })
+
+    if (!found) {
+        kitties.push(newKitty);
+    } 
+
+    return {added: oldLength !== kitties.length, total: kitties.length};
+};
+
+/*export const deleteKitty = (name) => {
+    const oldLength = kitties.length;
+
+    kitties = kitties.filter((kitty) => {
+        return kitty.name !== name;
+    });
+    return {deleted: oldLength !== kitties.length, total: kitties.length};
+};*/
+
+export const deleteKitty = (existingKitty) => {
+    const oldLength = kitties.length;
+    let found = kitties.find(kitty => {
+        return kitty.name === existingKitty.name;
+    })
+
+    if (found) {
+        kitties = kitties.filter(kitty => kitty.name !== existingKitty.name)
+    } 
+
+    return {deleted: oldLength !== kitties.length, total: kitties.length};
+};
